@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="/Images/right-arrow (1).png">
+    <link rel="script" href="">
+    <title>HOME</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+            <!-- Navigation section -->
+            <ol class="nav1">
+                <li class="list1">
+                    <img src="/Images/right-arrow (1).png" alt="logo" width="50px" height="50px">
+                </li>
+                <li class="list2">
+                    <h2>DLX</h2>
+                </li>
+                <li class="list3">
+                    <p>Have an account?</p>
+                </li>
+                <li class="list4">
+                    <button class="btn-1">Sign in</button>
+
+                </li>
+            </ol>
+        </nav>
+        <hr>
+    </header>
+    <!-- The main form section -->
+    <form action="https://httpbin.org/get" method="get" onsubmit="alert('Sucessful')">
+        <main>
+            <fieldset class="main-field">
+                <h1> GET STARTED</h1>
+                <p class="first-p">Welcome to -DLX-.let's create your account.</p>
+                <!-- Input section -->
+                <section class="section-1">
+                    <fieldset>
+                        <legend>
+                            <label for="firstname" class="label-1">Legal first name</label>
+                        </legend>
+                        <input type="text" name="firstname" id="" autocomplete="on" required autofocus class="input-1">
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <label for="lastname" class="label-1">Legal Last name</label>
+                        </legend>
+                        <input type="text" name="lastname" id="" autocomplete="on" required class="input-1">
+                    </fieldset>
+                </section>
+                <section class="section-2">
+                    <fieldset>
+                        <legend><Label for="phonenumber">Phone Number</Label></legend>
+                        <input type="tel" name="phonenumber" id="" placeholder="555 5555 5555"
+                            pattern="[0-9]{3}[0-9]{4][0-9]{4}" required class="input-2">
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <label for="email">Email</label>
+                        </legend>
+                        <input type="email" name="email" id="" autocomplete="on" required class="input-2">
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <label for="password">Password</label>
+                        </legend>
+                        <input type="password" name="password" id="" required class="input-2">
+                    </fieldset>
+                </section>
+                <!-- Radio and submit section -->
+                <section class="section-3">
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" id="" required value="Male">
+                    <label for="gender">Female</label>
+                    <input type="radio" name="gender" id="" required value="Female">
+                    <label for="gender">Other</label>
+                    <input type="radio" name="gender" id="" required value="Other">
+                    <br>
+                    <input type="submit" value="Submit" class="btn-2">
+                </section>
+
+
+            </fieldset>
+        </main>
+        <footer>
+
+        </footer>
+    </form>
+</body>
+
+</html>
